@@ -6,6 +6,7 @@ function App() {
   const [entrada, setEntrada] = useState('');
   const [saida, setSaida] = useState('');
   const [isFidelidade, setIsFidelidade] = useState(false);
+  const [valorTotal, setValorTotal] = useState(0);
   const valorBase = 18;
   const descontoFidelidade = 0.05;
 
@@ -26,10 +27,19 @@ function App() {
   };
 
   const calcularValorTotal = () => {
-    const horasEstacionado = (new Date(saida) - new Date(entrada)) / (1000 * 60 * 60); // Convertendo milissegundos para horas
+    const horasEstacionado = (new Date(saida) - new Date(entrada)) / (1000 * 60 * 60);
     const valorSemDesconto = valorBase * Math.ceil(horasEstacionado / 12);
     const desconto = isFidelidade ? valorSemDesconto * descontoFidelidade : 0;
     return valorSemDesconto - desconto;
+  };
+
+  const finalizarCobranca = () => {
+    const total = calcularValorTotal();
+    setValorTotal(total);
+    setPlaca('');
+    setEntrada('');
+    setSaida('');
+    setIsFidelidade(false);
   };
 
   return (
@@ -54,8 +64,9 @@ function App() {
         </label>
       </div>
       <div>
-        <p>Valor Total: R$ {calcularValorTotal().toFixed(2)}</p>
+        <p>Valor Total: R$ {valorTotal.toFixed(2)}</p>
       </div>
+      <button onClick={finalizarCobranca}>Finalizar Cobrança</button>
     </div>
   );
 }
