@@ -1,3 +1,9 @@
+/* index.css: Este é um arquivo de estilo 
+global que afeta todo o aplicativo. 
+
+É usado para definir estilos globais
+que se aplicam a todas as partes do aplicativo. */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

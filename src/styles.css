@@ -1,0 +1,60 @@
+/* Reset de margens e preenchimentos padrão */
+body, h1, h2, h3, p, label, input, button {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo global do body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Estilos para o container do aplicativo */
+  .App {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  
+  /* Estilos para o cabeçalho */
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para os campos de entrada */
+  input[type="text"],
+  input[type="datetime-local"],
+  input[type="number"],
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para o checkbox */
+  label input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  /* Estilos para o botão */
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

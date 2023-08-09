@@ -15,3 +15,7 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+
+/* index.js: Este é o ponto de entrada do seu aplicativo.
+ Ele importa o componente principal e o renderiza no elemento root do arquivo HTML.*/
