@@ -1,0 +1,2 @@
+src: Esta é a pasta onde você vai trabalhar mais frequentemente.
+ Ela contém o código-fonte real do seu aplicativo.

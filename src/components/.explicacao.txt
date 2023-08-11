@@ -1,0 +1,4 @@
+components: Esta é uma pasta que você pode criar para 
+armazenar componentes reutilizáveis do seu aplicativo.
+ Cada componente pode ter seu próprio 
+ arquivo .js e arquivo de estilos .css.
